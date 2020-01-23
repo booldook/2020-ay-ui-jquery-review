@@ -69,3 +69,4 @@ function initMobileSub() {
 	$(".sub-wrap").hide();
 	$(".subs").find(".fa-angle-down").removeClass("down");
 }
+
