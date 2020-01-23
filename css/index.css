@@ -1,4 +1,5 @@
 /* Common */
+html, body {font-size: 16px;}
 .wrapper {width: 100%; max-width: 900px; margin: 0 auto;}
 
 /* Header */
@@ -7,11 +8,18 @@
 .navi {position: relative; cursor: pointer;}
 .logo {padding: 0.75rem;}
 .navi > .title {padding: 0.75rem 3rem;}
-.sub-wrap {position: absolute; width: 100%; background-color: #333; display: none; }
+.navi:hover > .title {background-color: #555; color: #cde2f3;}
+.navi-wrap .sub-wrap {position: absolute; width: 100%; background-color: #333; display: none; }
 .sub-wrap > .sub {padding: 0.75rem; cursor: pointer; transition: all 0.5s;}
 .sub-wrap > .sub:hover {background-color: beige; color: #333;}
 
-.active {background-color: #555; color: #cde2f3;}
+.navi-mobile {padding: 0.75rem 1rem; cursor: pointer; background-color: #d67600; display: none;}
+.sub-mobile {position: absolute; width: 100%; top: 40px; background-color: darkslategrey; display: none;}
+.sub-mobile .title {padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center;}
+.sub-mobile .sub-wrap {display: none;}
+.sub-mobile > .subs {border-bottom: 1px solid #406b6b;}
+.sub-mobile > .subs li {padding: 0.75rem 2rem; background-color:#152727;}
+
 /* Main */
 
 
@@ -24,9 +32,12 @@
 }
 
 @media screen and (max-width: 768px) {
-
+	.navi {display: none;}
+	.navi-mobile {display: block;}
 }
 
 @media screen and (max-width: 575px) {
-
+	.logo {padding: 1rem;}
+	.navi-mobile {padding: 1rem 1.25rem;}
+	.sub-mobile {top: 48px;}
 }
