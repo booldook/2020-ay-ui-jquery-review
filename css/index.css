@@ -15,10 +15,12 @@ html, body {font-size: 16px;}
 
 .navi-mobile {padding: 0.75rem 1rem; cursor: pointer; background-color: #d67600; display: none;}
 .sub-mobile {position: absolute; width: 100%; top: 40px; background-color: darkslategrey; display: none;}
-.sub-mobile .title {padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center;}
+.sub-mobile .title {padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer;}
 .sub-mobile .sub-wrap {display: none;}
 .sub-mobile > .subs {border-bottom: 1px solid #406b6b;}
 .sub-mobile > .subs li {padding: 0.75rem 2rem; background-color:#152727;}
+.sub-mobile .fa-angle-down {transition: all 0.5s;}
+.sub-mobile .fa-angle-down.down {transform: rotate(-180deg);}
 
 /* Main */
 

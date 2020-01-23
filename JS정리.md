@@ -64,3 +64,9 @@ $(".box").css({"color": "red"}) // Setter
 ## 크기관련
 1. width(), innerWidth(), outerWidth(), outerWidth(true)
 2. position(), offset(), scrollTop() 
+~~~js
+$(객체).width() - margin, border, padding을 제외한 순수 컨텐츠 사이즈
+$(객체).innerWidth() - margin, border를 제외한 padding + content
+$(객체).outerWidth() - margin을 제외한 border + padding + content
+$(객체).outerWidth(true) - margin + border + padding + content
+~~~
